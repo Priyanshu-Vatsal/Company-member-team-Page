@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+  /* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 11px 0 11px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+}
+
+.navbar .logo{
+  color: black
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #007FFF;
+  text-decoration: underline;
+}
+
+.navbar ul{
+  display: flex;
+  gap: 5rem;
+}
+
+.navbarBtn{
+  width: 5rem;
+  padding: 10px;
+  transition: 1s;
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbarBtn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar ul{
+    display: none;
+  }
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  animation: example 2s ease-in;
+  margin-top: 5rem;
+}
+header .logo{
+ background-color: #007FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 9px 0 9px;
+  transition: 2s;
+  margin-top: 1rem;
+}
+
+header .logo:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+header .discription{
+  width: 50rem;
+  text-align: center;
+  animation: example 2s;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  header .discription{
+    width: 20rem;
+  }
+}
+
+header .discription .line{
+  margin-top: 2rem;
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes example {
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }  
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.team{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.leaderOutterDiv{
+  width: 100%;
+}
+
+main .leader{
+  background-color: #007FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px 5px 9px;
+  margin-bottom: 2rem;
+}
+
+.leaderOutterDivOne{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .leaderOutterDiv,.leaderOutterDivOne,.leaderOutterDivTwo{
+    gap: 5rem;
+  }
+}
+.image img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: 2s;
+}
+
+.image{
+  text-align: center;
+  color: white;
+}
+
+.leaderOutterDivTwo{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.development{
+  background-color: #007FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px 5px 9px;
+  margin:2rem 0 2rem 0;
+}
+
+
